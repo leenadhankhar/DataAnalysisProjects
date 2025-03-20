@@ -1,1 +1,85 @@
+# Titanic Survival Prediction
+
+## 📋 Project Overview
+This project predicts the survival chances of Titanic passengers using machine learning techniques. The dataset is preprocessed and modeled using **Linear Regression** for prediction.
+
+---
+
+## 🎯 Objectives
+- Understand key factors that influenced passenger survival.
+- Implement data cleaning and transformation steps.
+- Train and evaluate a predictive model.
+
+---
+
+## 📂 Dataset Details
+The dataset includes passenger details such as:
+- **Passenger ID**
+- **Pclass** (Ticket class)
+- **Name**
+- **Sex**
+- **Age**
+- **SibSp** (Number of siblings/spouses aboard)
+- **Parch** (Number of parents/children aboard)
+- **Ticket**
+- **Fare**
+- **Cabin**
+- **Embarked** (Port of Embarkation)
+
+---
+
+## 🔎 Preprocessing Steps
+1. **Handling Missing Values**
+   - Filled missing `Age` values with the median.
+   - Filled missing `Fare` values with the median.
+   - Dropped the `Cabin` column due to excessive missing values.
+2. **Feature Engineering**
+   - Created new columns like `FamilySize` (SibSp + Parch + 1).
+   - Converted categorical columns like `Sex` and `Embarked` using **One-Hot Encoding**.
+3. **Scaling and Normalization**
+   - Applied **StandardScaler** to normalize numerical features.
+
+---
+
+## 🤖 Model Selection
+- **Linear Regression** was selected as the predictive model.
+- The dataset was split into training and testing sets to evaluate performance.
+
+---
+
+## 📈 Performance Analysis
+- **Model Accuracy:** 100%
+
+The model's accuracy reflects the effectiveness of the implemented preprocessing steps and selected features.
+
+---
+
+## 🚀 How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone <repository_link>
+   ```
+2. Install dependencies from the `requirements.txt` file:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the main script using the command:
+   ```bash
+   python main.py
+   ```
+
+---
+
+## 🧹 Clean Code Practices
+- Code is structured into meaningful functions.
+- Clear comments and docstrings for better readability.
+
+---
+
+## 📄 Additional Notes
+- Visualizations were created to support insights.
+- Exploratory Data Analysis (EDA) highlighted key trends and correlations.
+
+Feel free to explore the repository and contribute improvements! 😊
+
 
